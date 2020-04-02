@@ -1,0 +1,31 @@
+{% extends 'map/base.html' %}
+
+{% block content %}
+  
+    <div class="container">
+        <h2>{{bf_object.name}}</h2><h4>{{proc_object.Process}}</h4>
+        <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Sub_Process</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            {% for s in sub_process %}
+                <tr>
+                
+
+                    <td>{{ s.id }}</td>
+                    <td>{{ s.subprocess }}</td>
+                </tr>        
+            {% endfor %}
+              
+          </tbody>
+        </table>
+        </div>
+      </div>
+        
+{% endblock %}        

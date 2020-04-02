@@ -1,0 +1,31 @@
+{% extends 'map/base.html' %}
+
+{% block content %}
+  
+    <div class="container">
+        <h2>{{bf_object.name}}</h2>
+        <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Process</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in process %}
+                <tr>
+                
+
+                    <td>{{ p.id }}</td>
+                    <td><a href="/home/{{domain_object.id}}/{{bf_object.id}}/{{p.id}}">{{ p.Process }}</a></td>
+                </tr>        
+            {% endfor %}
+              
+          </tbody>
+        </table>
+        </div>
+      </div>
+        
+{% endblock %}        
