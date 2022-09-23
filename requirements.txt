@@ -68,7 +68,7 @@ Pillow==5.4.1
 prettytable==0.7.2
 productmd==1.24
 prompt-toolkit==1.0.15
-protobuf==3.8.0
+protobuf==3.18.3
 psutil==5.5.1
 pycairo==1.16.2
 pycodestyle==2.4.0
